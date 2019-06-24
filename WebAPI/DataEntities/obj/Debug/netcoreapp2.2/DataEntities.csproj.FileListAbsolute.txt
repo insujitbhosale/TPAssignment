@@ -1,0 +1,11 @@
+D:\#LearnAlways\TetrapakWebAPIAssignment\TPAssignment\WebAPI\DataEntities\bin\Debug\netcoreapp2.2\DataEntities.deps.json
+D:\#LearnAlways\TetrapakWebAPIAssignment\TPAssignment\WebAPI\DataEntities\bin\Debug\netcoreapp2.2\DataEntities.runtimeconfig.json
+D:\#LearnAlways\TetrapakWebAPIAssignment\TPAssignment\WebAPI\DataEntities\bin\Debug\netcoreapp2.2\DataEntities.runtimeconfig.dev.json
+D:\#LearnAlways\TetrapakWebAPIAssignment\TPAssignment\WebAPI\DataEntities\bin\Debug\netcoreapp2.2\DataEntities.dll
+D:\#LearnAlways\TetrapakWebAPIAssignment\TPAssignment\WebAPI\DataEntities\bin\Debug\netcoreapp2.2\DataEntities.pdb
+D:\#LearnAlways\TetrapakWebAPIAssignment\TPAssignment\WebAPI\DataEntities\obj\Debug\netcoreapp2.2\DataEntities.csprojAssemblyReference.cache
+D:\#LearnAlways\TetrapakWebAPIAssignment\TPAssignment\WebAPI\DataEntities\obj\Debug\netcoreapp2.2\DataEntities.csproj.CoreCompileInputs.cache
+D:\#LearnAlways\TetrapakWebAPIAssignment\TPAssignment\WebAPI\DataEntities\obj\Debug\netcoreapp2.2\DataEntities.AssemblyInfoInputs.cache
+D:\#LearnAlways\TetrapakWebAPIAssignment\TPAssignment\WebAPI\DataEntities\obj\Debug\netcoreapp2.2\DataEntities.AssemblyInfo.cs
+D:\#LearnAlways\TetrapakWebAPIAssignment\TPAssignment\WebAPI\DataEntities\obj\Debug\netcoreapp2.2\DataEntities.dll
+D:\#LearnAlways\TetrapakWebAPIAssignment\TPAssignment\WebAPI\DataEntities\obj\Debug\netcoreapp2.2\DataEntities.pdb

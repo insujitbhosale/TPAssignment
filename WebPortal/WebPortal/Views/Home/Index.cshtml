@@ -1,0 +1,163 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<div class="row">
+    <div class="col-md-6">
+        <h5> Employees</h5>
+    </div>
+
+    <div class="col-md-6">
+        <h5> Departments</h5>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-6 table-responsive">
+        <table id="EmployeeData"
+               data-id-field="id"
+               data-toggle="true"
+               data-pagination="true"
+               data-sortable="true"
+               data-page-size="5"
+               data-single-select="true"
+               data-click-to-select="true"
+               data-page-list="[5,10,50,100]">
+            <thead>
+                <tr>
+                    <th data-field="state" data-checkbox="true"></th>
+                    <th data-field="id">ID</th>
+                    <th data-field="name">Name</th>
+                    <th data-field="address">Address</th>
+                    <th data-field="department.deptName">Department</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <div class="col-md-6 table-responsive">
+        <table id="DepartmentData"
+               data-id-field="id"
+               data-toggle="true"
+               data-pagination="true"
+               data-sortable="true"
+               data-page-size="5"
+               data-single-select="true"
+               data-click-to-select="true"
+               data-page-list="[5,10,50,100]">
+            <thead>
+                <tr>
+                    <th data-field="state" data-checkbox="true"></th>
+                    <th data-field="deptID" data-width="50">ID</th>
+                    <th data-field="deptName" data-width="50">Name</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+<br />
+
+<div class="row">
+    <div class="col-md-6">
+        <button type="button" id="btnEmpMdCreate" class="btn btn-info">Insert</button>
+        <button type="button" id="btnEmpMdUpdate" class="btn btn-warning">Update</button>
+        <button type="button" id="btnEmpDelete" class="btn btn-danger">Delete</button>
+    </div>
+
+    <div class="col-md-6">
+        <button type="button" id="btnDepMdCreate" class="btn btn-info">Insert</button>
+        <button type="button" id="btnDepMdUpdate" class="btn btn-warning">Update</button>
+        <button type="button" id="btnDepDelete" class="btn btn-danger">Delete</button>
+    </div>
+</div>
+
+<form id="empForm">
+    <!-- Modal -->
+    <div class="modal fade" id="EmployeeModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">Employee Operations</h6>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12">
+                        <label class="form-control-label">Department List</label>
+                        <select class="form-control" id="departmentList"></select>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="form-control-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-control-label">Address</label>
+                            <input type="text" class="form-control" id="address" name="address">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="form-control-label">User ID</label>
+                            <input type="text" class="form-control" id="userID" value="sujit" name="userID">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-control-label">Password</label>
+                            <input type="password" class="form-control" id="password" value="tetrapack" name="password">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnEmpUpdate" class="btn btn-warning">Update</button>
+                    <button type="button" id="btnEmpCreate" class="btn btn-info">Insert</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+<form id="deptForm">
+    <div class="modal fade" id="departmentModel" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">Department Operation</h6>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="form-control-label">Name</label>
+                            <input type="text" class="form-control" id="deptName" name="deptName">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="form-control-label">User ID</label>
+                            <input type="text" class="form-control" id="depuserID" value="sujit" name="depuserID">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-control-label">Password</label>
+                            <input type="password" class="form-control" id="deppassword" value="tetrapack" name="deppassword">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnDepUpdate" class="btn btn-warning">Update</button>
+                    <button type="button" id="btnDepCreate" class="btn btn-info">Insert</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
